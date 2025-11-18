@@ -2,12 +2,18 @@ import React, { useState } from 'react'
 
 const App = () => {
 
-  const [num, setNum] = useState([10, 20, 30])
+  const [num, setNum] = useState([10, 20, 30])//({user:"saloni",age:20})
 
   const btnClicked = () => {
     const newNum = [...num]
-    newNum[3] = 40
+    newNum[3] = 40 //neNum.push(40)
     setNum(newNum)
+    //ORsetNum(prev=>({...prev, age:50}))
+    //batchupdate
+    //setNum(prev=>prev+1)
+    //setNum(prev=>prev+1)
+    //setNum(prev=>(prev+1))
+
 
 
   }
